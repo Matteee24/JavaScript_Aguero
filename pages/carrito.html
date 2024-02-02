@@ -8,16 +8,20 @@
     <link rel="shortcut icon" href="../images/favicon.jpg" type="image/x-icon">
 </head>
 <body>
+
+    <header>
+        <h1>HERMES</h1>
+      </header>
     <nav class="navIndex">
         <a href="../index.html" onclick="mostrarPagina('Inicio')">Inicio</a>
         <a href="/pages/tienda.html" onclick="mostrarPagina('Tienda')">Tienda</a>
         <a href="/pages/contacto.html" onclick="mostrarPagina('Contacto')">Contacto</a>
         <a href="/pages/carrito.html" onclick="mostrarPagina('Carrito')">Carrito</a>
     </nav>
-    <aside id="carrito">
+    <aside id="carrito" class="carrito-section">
         <h2>Carrito de compras</h2>
         <ul id="lista-carrito"></ul>
-        <p>Total a pagar: <span id="total"></span>€</p>
+        <b><p>Total a pagar: <span id="total"></span>€</p></b>
         <button id="realizar-compra">Realizar Compra</button>
       </aside>
 

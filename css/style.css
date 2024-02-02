@@ -92,9 +92,9 @@ body, h1, h2, p, ul, li {
     background-color: #d32f2f;
   }
   
-  /* Estilo para el botón de realizar compra */
+
   #realizar-compra {
-    background-color: #3498db;
+    background-color: #0b66ac;
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;
@@ -105,7 +105,7 @@ body, h1, h2, p, ul, li {
   }
   
   #realizar-compra:hover {
-    background-color: #07c446;
+    background-color: #3498db;
   }
   
   
@@ -115,12 +115,6 @@ body, h1, h2, p, ul, li {
     margin-right: 10px; 
   }
 
-  
-  .bodyIndex {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
   
   header {
     background-color: #0d408d;
@@ -157,27 +151,154 @@ body, h1, h2, p, ul, li {
     display: none;
   }
   
+.slider {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  position: relative;
+  bottom: 1px;
+  overflow-y: hidden;
+  border-radius: 30px;
+}
+.slider .slides {
+  display: flex;
+  width: 500%;
+  height: 100%;
+  animation: slide-animation 15s infinite;
+}
+.slider .slides .slide {
+  width: 20%;
+}
+.slider .slides .slide img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.slider input[name=slider] {
+  display: none;
+}
+.slider .slider-navigation {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.slider .slider-navigation label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.slider .slider-navigation input[name=slider]:checked ~ label {
+  background-color: #555;
+}
 
-  .carrusel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    white-space: nowrap;
+@keyframes slide-animation {
+  0% {
+    transform: translateX(0);
   }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20%);
+  }
+  45% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(-40%);
+  }
+  70% {
+    transform: translateX(-40%);
+  }
+  75% {
+    transform: translateX(-60%);
+  }
+  95% {
+    transform: translateX(-60%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+body {
+  background-color: #f8f9fa;
+  color: #000000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(251, 251, 251);
   
-  .producto {
-    flex: 0 0 auto;
-    margin-right: 10px;
-    scroll-snap-align: start;
-  }
   
-  .seccion-tienda {
-    margin-top: 20px;
-  }
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.welcome-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.bodyContacto .contact-container {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: 490px;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+.bodyContacto .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyContacto .contact-form label {
+  margin-top: 10px;
+}
+
+.bodyContacto .contact-form input,
+.bodyContacto .contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.bodyContacto .contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bodyContacto .contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.bodyContacto .response {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
 
 
-.bodyTienda{
-  overflow-y: auto; 
-  margin: 0; 
+.carrito-section {
+  background-color: #ffffff; 
+  border: 10px solid #3498db; 
+  border-radius: 8px;
+  padding: 20px;
 }
