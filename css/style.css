@@ -14,7 +14,7 @@ body, h1, h2, p, ul, li {
   
   
   header {
-    background-color: #074994;
+    background-color: #fc0a0a;
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -50,7 +50,7 @@ body, h1, h2, p, ul, li {
   }
   
   .agregar-carrito {
-    background-color: #4caf50;
+    background-color: #4bbff4;
     color: #fff;
     padding: 8px 12px;
     border: none;
@@ -60,7 +60,7 @@ body, h1, h2, p, ul, li {
   }
   
   .agregar-carrito:hover {
-    background-color: #45a049;
+    background-color: #09df30;
   }
   
   
@@ -117,7 +117,7 @@ body, h1, h2, p, ul, li {
 
   
   header {
-    background-color: #0d408d;
+    background-color: #0369f7;
     color: white;
     padding: 10px;
     text-align: center;
@@ -133,14 +133,14 @@ body, h1, h2, p, ul, li {
   nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #333;
+    color: #726f6f;
     font-weight: bold;
     cursor: pointer;
     transition: color 0.3s ease-in-out;
   }
   
   nav a:hover {
-    color: #555;
+    color: #000000;
   }
   
   #contenedor-paginas {
@@ -250,7 +250,7 @@ body {
   width: 80%;
   max-width: 400px;
   margin-top: 20px;
-  margin-left: 490px;
+  margin-left: 523px;
   padding: 50px;
   background-color: #ffffff;
   border-radius: 8px;
